@@ -26,6 +26,21 @@
           },
           "minItems": 1
         },
+     	"cluster": {
+      	  "type": "object",
+      	  "properties": {
+            "id": {
+              "type": "string"
+	      },
+	    "start": {
+	      "type": "number"
+	     },
+	    "end": {
+	      "type": "number"
+	    },
+            "additionalProperties": false
+           },
+        },
         "functional_consequence": {
           "type": "string",
           "enum": [
