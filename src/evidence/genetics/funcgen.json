@@ -38,7 +38,7 @@
         "dhs_score": {
            "type": "number",
            "minimum": 0
-        }
+        },
         "pchic_score": {
            "type": "number",
            "minimum": 0
