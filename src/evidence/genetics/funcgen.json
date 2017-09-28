@@ -42,19 +42,24 @@
            "type": "number",
            "minimum": 0,
         }
+        "pchic_score": {
+           "type": "number",
+           "minimum": 0,
+        }
      }
    }
   ],
   "properties": {
-    "postgap_score": {}
-    "postgap_rank": {}
-    "vep_terms": {}
-    "vep_sum": {}
-    "vep_mean": {}
-    "gtex_score": {}
-    "vep_score": {}
-    "fantom5_score": {}
-    "dhs_score": {}
+    "postgap_score": {},
+    "postgap_rank": {},
+    "vep_terms": {},
+    "vep_sum": {},
+    "vep_mean": {},
+    "gtex_score": {},
+    "vep_score": {},
+    "fantom5_score": {},
+    "dhs_score": {},
+    "pchic_score": {}
   },
   "required": [
     "??"
