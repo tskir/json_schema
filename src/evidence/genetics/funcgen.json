@@ -9,50 +9,50 @@
       "properties": {
        	"postgap_score": {
            "type": "number",
-           "minimum": 0,
+           "minimum": 0
         },
         "postgap_rank": {
            "type": "number",
-           "minimum": 0,
+           "minimum": 0
         },
         "vep_sum": {
            "type": "number",
-           "minimum": 0,
+           "minimum": 0
         },
         "vep_mean": {
            "type": "number",
-           "minimum": 0,
+           "minimum": 0
         },
         "gtex_score": {
            "type": "number",
-           "minimum": 0,
+           "minimum": 0
         },
         "vep_score": {
            "type": "number",
-           "minimum": 0,
+           "minimum": 0
         },
         "fantom5_score": {
            "type": "number",
-           "minimum": 0,
+           "minimum": 0
         },
         "dhs_score": {
            "type": "number",
-           "minimum": 0,
+           "minimum": 0
         }
         "pchic_score": {
            "type": "number",
-           "minimum": 0,
+           "minimum": 0
         },
         "is_nearest_gene": {
-           "type": "boolean",
+           "type": "boolean"
         },
         "regulome_score": {
            "type": "number",
-           "minimum": 0,
+           "minimum": 0
         },
         "vep_reg_score": {
            "type": "number",
-           "minimum": 0,
+           "minimum": 0
         },
      }
    }
