@@ -53,7 +53,7 @@
         "vep_reg_score": {
            "type": "number",
            "minimum": 0
-        },
+        }
      }
    }
   ],
