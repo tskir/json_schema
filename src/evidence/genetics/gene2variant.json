@@ -30,7 +30,7 @@
           "type": "object",
           "items": {
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/genetics/funcgen.json"
+            "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/postgap/src/evidence/genetics/funcgen.json"
           }
         },
         "functional_consequence": {
