@@ -22,7 +22,21 @@
                         "snp snp interaction",
                         "structural variant"
                     ]
-                }
+                },
+                "is_gwas_snp": {
+                    "type": "boolean"
+                },
+		"chrom": {
+                    "type": "string"
+                },
+		"pos": {
+                    "type": "number",
+		    "minimum": 0,
+	   	    "exclusiveMinimum": true
+                },  
+		"cluster_id": {
+                    "type": "string"
+                }  
             }
         }
     ],
