@@ -6,9 +6,6 @@
   "version": "1.2.7",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/bioentity/base.json"
-    },
-    {
       "properties": {
        	"postgap_score": {
            "type": "number",
