@@ -2289,7 +2289,8 @@
     "date_asserted": {},
     "evidence_codes": {},
     "urls": {},
-    "functional_consequence": {}
+    "functional_consequence": {},
+    "funcgen": {}
   },
   "required": [
     "provenance_type",
