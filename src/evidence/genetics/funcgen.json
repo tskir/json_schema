@@ -59,7 +59,8 @@
     "pchic_score": {}
   },
   "required": [
-    "??"
+    "postgap_score",
+    "postgap_rank"
   ],
   "additionalProperties": false
 }
