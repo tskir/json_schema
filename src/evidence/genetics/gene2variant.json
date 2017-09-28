@@ -26,20 +26,12 @@
           },
           "minItems": 1
         },
-     	"cluster": {
-      	  "type": "object",
-      	  "properties": {
-            "id": {
-              "type": "string"
-	      },
-	    "start": {
-	      "type": "number"
-	     },
-	    "end": {
-	      "type": "number"
-	    },
-            "additionalProperties": false
-           },
+        "funcgen": {
+          "type": "object",
+          "items": {
+            "type": "object",
+            "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/genetics/funcgen.json"
+          }
         },
         "functional_consequence": {
           "type": "string",
