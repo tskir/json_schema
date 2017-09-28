@@ -18,18 +18,18 @@
         },
         "variant": {
           "type": "object",
-          "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/bioentity/variant.json"
+          "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/postgap/src/bioentity/variant.json"
         },
         "evidence": {
           "type": "object",
           "properties": {
             "gene2variant": {
               "type": "object",
-              "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/genetics/gene2variant.json"
+              "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/postgap/src/evidence/genetics/gene2variant.json"
             },
             "variant2disease": {
               "type": "object",
-              "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/genetics/variant2disease.json"
+              "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/postgap/src/evidence/genetics/variant2disease.json"
             }
           },
           "required": [
