@@ -42,7 +42,11 @@
     ],
     "properties": {
         "id": {},
-        "type": {}
+        "type": {},
+	"is_gwas_snp": {},
+	"chrom": {},
+	"pos": {},
+	"cluster_id": {}
     },
     "required": [
         "id",
