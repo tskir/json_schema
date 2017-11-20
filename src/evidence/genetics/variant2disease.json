@@ -13,6 +13,9 @@
         "allOf": {
           "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/base.json"
         },
+        "lead_snp_rsid": {
+          "type": "string"
+        },  
         "clinical_significance": {
           "type": "string",
 	  "enum": [
@@ -60,6 +63,7 @@
     }
   ],
   "properties": {
+    "lead_snp_rsid": {},
     "clinical_significance": {},
     "resource_score": {},
     "unique_experiment_reference": {},
