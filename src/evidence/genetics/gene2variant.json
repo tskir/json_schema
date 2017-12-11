@@ -2291,14 +2291,17 @@
     "evidence_codes": {},
     "urls": {},
     "functional_consequence": {},
-    "funcgen": {}
+      "funcgen": {},
+      "resource_score": {},
+      "metadata": {}
   },
   "required": [
     "provenance_type",
     "is_associated",
     "date_asserted",
     "evidence_codes",
-    "functional_consequence"
+      "functional_consequence",
+      "resource_score"
   ],
   "additionalProperties": false,
   "import_remote_schemas": [
