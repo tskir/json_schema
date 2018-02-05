@@ -6,13 +6,13 @@
     "unique_association_fields": {
         "study_id": "http://identifiers.org/gxa.expt/E-GEOD-14001",
         "comparison_name": "'low grade serous ovarian carcinoma' vs 'normal'",
-        "geneID": "http://identifiers.org/ensembl/ENSG00000112984"
+        "geneID": "http://identifiers.org/ensembl/ENSG000001.2.74"
     },
     "target": {
         "target_type": "http://identifiers.org/cttv.target/transcript_evidence",
         "activity": "http://identifiers.org/cttv.activity/decreased_transcript_level",
         "id": [
-            "http://identifiers.org/ensembl/ENSG00000112984"
+            "http://identifiers.org/ensembl/ENSG000001.2.74"
         ]
     },
     "disease": {
@@ -29,12 +29,12 @@
         "unique_experiment_reference": "STUDYID_E-GEOD-14001",
         "urls": [
             {
-                "url": "http://www.ebi.ac.uk/gxa/experiments/E-GEOD-14001?geneQuery=ENSG00000112984",
+                "url": "http://www.ebi.ac.uk/gxa/experiments/E-GEOD-14001?geneQuery=ENSG000001.2.74",
                 "nice_name": "Gene expression in Expression Atlas"
             },
             {
                 "nice_name": "Baseline gene expression in Expression Atlas",
-                "url": "http://www.ebi.ac.uk/gxa/genes/ENSG00000112984"
+                "url": "http://www.ebi.ac.uk/gxa/genes/ENSG000001.2.74"
             },
             {
                 "nice_name": "ArrayExpress Experiment overview",
