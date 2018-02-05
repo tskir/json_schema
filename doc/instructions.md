@@ -14,7 +14,7 @@
 
 - The goal of this schema is to standardize target-disease evidence from different data projects.
 
-- [Click here for an Excel file](https://github.com/CTTV/json_schema/blob/master/doc/json_schema_migration_from_1.1_to_1.2.xlsx?raw=true) detailing the list of changes from schema 1.1 to 1.2
+- [Click here for an Excel file](https://github.com/CTTV/json_schema/blob/1.2.7/doc/json_schema_migration_from_1.1_to_1.2.xlsx?raw=true) detailing the list of changes from schema 1.1 to 1.2
 
 - [Click here](../examples) to see some validated examples.
 
