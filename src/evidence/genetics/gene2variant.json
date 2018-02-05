@@ -3,15 +3,15 @@
   "title": "target_snp_evidence",
   "description": "Evidence linking target to SNP",
   "type": "object",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.7/src/evidence/base.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/base.json"
     },
     {
       "properties": {
         "allOf": {
-          "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.7/src/evidence/base.json"
+          "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/base.json"
         },
         "evidence_codes": {
           "type": "array",
@@ -26,17 +26,9 @@
           },
           "minItems": 1
         },
-        "funcgen": {
-          "type": "object",
-          "items": {
-            "type": "object",
-            "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/postgap/src/evidence/genetics/funcgen.json"
-          }
-        },
         "functional_consequence": {
           "type": "string",
           "enum": [
-            "http://targetvalidation.org/sequence/unknown",
             "http://targetvalidation.org/sequence/nearest_gene_five_prime_end",
             "http://targetvalidation.org/sequence/regulatory_nearest_gene_five_prime_end",
             "http://purl.obolibrary.org/obo/SO_0002165",
@@ -2277,7 +2269,7 @@
           "type": "array",
           "items": {
             "type": "object",
-            "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.7/src/evidence/linkout/linkout.json"
+            "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/linkout/linkout.json"
           }
         }
       }
@@ -2290,38 +2282,34 @@
     "date_asserted": {},
     "evidence_codes": {},
     "urls": {},
-    "functional_consequence": {},
-      "funcgen": {},
-      "resource_score": {},
-      "metadata": {}
+    "functional_consequence": {}
   },
   "required": [
     "provenance_type",
     "is_associated",
     "date_asserted",
     "evidence_codes",
-      "functional_consequence",
-      "resource_score"
+    "functional_consequence"
   ],
   "additionalProperties": false,
   "import_remote_schemas": [
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.7/src/evidence/association_score/method.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/method.json"
     },
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.7/src/evidence/association_score/probability.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/probability.json"
     },
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.7/src/evidence/association_score/summed_total.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/summed_total.json"
     },
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.7/src/evidence/association_score/pvalue.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/pvalue.json"
     },
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.7/src/evidence/association_score/rank.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/rank.json"
     },
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.7/src/evidence/association_score/base.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/base.json"
     }
   ]
 }
