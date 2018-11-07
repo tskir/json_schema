@@ -23,10 +23,14 @@
     "method": {
       "type": "object",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/method.json"
 =======
       "$ref": "method.json"
 >>>>>>> master
+=======
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/method.json"
+>>>>>>> parent of 164dbd0... ensure 1.2.8 branch only references 1.2.8 branch
     }
   },
   "required": [

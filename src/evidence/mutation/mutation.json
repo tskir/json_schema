@@ -5,9 +5,13 @@
   "type": "object",
   "version": "1.2.8",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "id": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/mutation/mutation.json",
 =======
 >>>>>>> master
+=======
+  "id": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/mutation/mutation.json",
+>>>>>>> parent of 164dbd0... ensure 1.2.8 branch only references 1.2.8 branch
   "properties": {
     "role_in_cancer": {
       "description": "The role in cancer can be TSG, oncogene or gene_fusion",

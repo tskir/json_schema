@@ -7,7 +7,11 @@
   "allOf": [
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/bioentity/base.json"
+=======
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/bioentity/base.json"
+>>>>>>> parent of 164dbd0... ensure 1.2.8 branch only references 1.2.8 branch
     },
     {
 =======

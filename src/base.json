@@ -32,20 +32,28 @@
       "type": "object",
       "description" : "Target in OpenTargets's target ontology",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/bioentity/target.json"
 =======
       "$ref": "bioentity/target.json"
 >>>>>>> master
+=======
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/bioentity/target.json"
+>>>>>>> parent of 164dbd0... ensure 1.2.8 branch only references 1.2.8 branch
     },
 
     "disease" : {
       "type": "object",
       "description" : "Disease in the EFO ontology",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/bioentity/disease.json"
 =======
       "$ref": "bioentity/disease.json"
 >>>>>>> master
+=======
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/bioentity/disease.json"
+>>>>>>> parent of 164dbd0... ensure 1.2.8 branch only references 1.2.8 branch
     },
 
     "literature": {
@@ -56,10 +64,14 @@
           "items": {
             "type": "object",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/base.json#/definitions/single_lit_reference"
 =======
             "$ref": "evidence/single_lit_reference.json"
 >>>>>>> master
+=======
+            "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/base.json#/definitions/single_lit_reference"
+>>>>>>> parent of 164dbd0... ensure 1.2.8 branch only references 1.2.8 branch
           },
           "minItems": 1,
           "uniqueItems": true
@@ -70,16 +82,16 @@
   },
   "import_remote_schemas": [
     { 
-	  "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/bioentity/base.json"
+	  "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/bioentity/base.json"
 	},
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/linkout/linkout.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/linkout/linkout.json"
     },
 	{
-		"$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/base.json"
+		"$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/base.json"
 	},
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/base.json#/definitions/single_lit_reference"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/base.json#/definitions/single_lit_reference"
     }
   ]
 =======

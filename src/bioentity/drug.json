@@ -7,7 +7,11 @@
   "allOf": [
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/bioentity/base.json"
+=======
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/bioentity/base.json"
+>>>>>>> parent of 164dbd0... ensure 1.2.8 branch only references 1.2.8 branch
     },
     {
 =======
@@ -27,10 +31,14 @@
         "max_phase_for_all_diseases": {
           "type": "object",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/drug/diseasephase.json"
 =======
           "$ref": "../evidence/drug/diseasephase.json"
 >>>>>>> master
+=======
+          "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/drug/diseasephase.json"
+>>>>>>> parent of 164dbd0... ensure 1.2.8 branch only references 1.2.8 branch
         },
         "withdrawn_country": {
           "type": ["string","null"]
