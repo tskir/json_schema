@@ -1,12 +1,16 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "expression_evidence",
     "description": "Expression evidence linking gene/protein to disease",
     "type": "object",
     "version": "1.2.8",
     "allOf": [
         {
+<<<<<<< HEAD
             "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/base.json"
+=======
+            "$ref": "base.json"
+>>>>>>> master
         },
         {
             "properties": {
@@ -31,8 +35,7 @@
                     "required": [
                         "value",
                         "percentile_rank"
-                    ],
-                    "additionalProperties": false
+                    ]
                 },
                 "test_sample": {
                     "description": "Free text - test sample",
@@ -83,7 +86,11 @@
                     "type": "array",
                     "items": {
                         "type": "object",
+<<<<<<< HEAD
                         "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/linkout/linkout.json"
+=======
+                        "$ref": "linkout/linkout.json"
+>>>>>>> master
                     }
                 }
             }
@@ -107,7 +114,6 @@
         "urls": {},
         "unique_experiment_reference": {}
     },
-    "additionalProperties": false,
     "required": [
         "resource_score",
         "provenance_type",
@@ -123,6 +129,7 @@
         "test_replicates_n",
         "reference_replicates_n",
         "confidence_level"
+<<<<<<< HEAD
     ],
   "import_remote_schemas": [
     {
@@ -144,4 +151,7 @@
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/base.json"
     }
   ]
+=======
+    ]
+>>>>>>> master
 }

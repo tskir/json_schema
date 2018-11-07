@@ -1,12 +1,16 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Genetics-based evidence strings",
   "description": "Schema for target-disease evidence where there is genetics / variation knowledge",
   "type": "object",
   "version": "1.2.8",
   "allOf": [
     {
+<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/base.json"
+=======
+      "$ref": "base.json"
+>>>>>>> master
     },
     {
       "properties": {
@@ -18,25 +22,37 @@
         },
         "variant": {
           "type": "object",
+<<<<<<< HEAD
           "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/bioentity/variant.json"
+=======
+          "$ref": "bioentity/variant.json"
+>>>>>>> master
         },
         "evidence": {
           "type": "object",
           "properties": {
             "gene2variant": {
               "type": "object",
+<<<<<<< HEAD
               "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/genetics/gene2variant.json"
             },
             "variant2disease": {
               "type": "object",
               "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/genetics/variant2disease.json"
+=======
+              "$ref": "evidence/genetics/gene2variant.json"
+            },
+            "variant2disease": {
+              "type": "object",
+              "$ref": "evidence/genetics/variant2disease.json"
+>>>>>>> master
             }
           },
           "required": [
             "gene2variant",
             "variant2disease"
-          ],
-          "additionalProperties": false
+          ]
+          
         }
       }
     }
@@ -44,7 +60,6 @@
   "properties": {
     "type": {},
     "sourceID": {},
-    "validated_against_schema_version": {},
     "unique_association_fields": {},
     "access_level" :{},
     "target": {},
@@ -57,12 +72,12 @@
     "type",
     "sourceID",
     "access_level",
-    "validated_against_schema_version",
     "unique_association_fields",
     "target",
     "disease",
     "evidence",
     "variant"
+<<<<<<< HEAD
   ],
   "additionalProperties": false,
   "import_remote_schemas": [
@@ -99,5 +114,7 @@
     {
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/base.json"
     }
+=======
+>>>>>>> master
   ]
 }

@@ -1,14 +1,17 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "OpenTargets disease",
   "description": "OpenTargets disease. This uses the EFO ontology",
   "type": "object",
   "version": "1.2.8",
   "allOf": [
     {
+<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/bioentity/base.json"
     },
     {
+=======
+>>>>>>> master
       "properties": {
         "id": {
           "type" : "string",
@@ -25,6 +28,7 @@
         },
         "biosample": {
           "description": "Tissue names - provide EFO name if you have this",
+          "title": "Disease Biosample",
           "type": "object",
           "properties": {
             "name": {
@@ -39,8 +43,7 @@
           },
           "required": [
             "name"
-          ],
-          "additionalProperties": false
+          ]
         }
       }
     }
@@ -53,6 +56,6 @@
   },
   "required": [
     "id"
-  ],
-  "additionalProperties": false
+  ]
+  
 }

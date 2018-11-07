@@ -1,12 +1,16 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Drug-based evidence strings",
   "description": "Schema for target-disease evidence where there is drug knowledge",
   "type": "object",
   "version": "1.2.8",
   "allOf": [
     {
+<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/base.json"
+=======
+      "$ref": "base.json"
+>>>>>>> master
     },
     {
       "properties": {
@@ -18,25 +22,36 @@
         },
         "drug": {
           "type": "object",
+<<<<<<< HEAD
           "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/bioentity/drug.json"
+=======
+          "$ref": "bioentity/drug.json"
+>>>>>>> master
         },
         "evidence": {
           "type": "object",
           "properties": {
             "target2drug": {
               "type": "object",
+<<<<<<< HEAD
               "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/drug/target2drug.json"
             },
             "drug2clinic": {
               "type": "object",
               "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/drug/drug2clinic.json"
+=======
+              "$ref": "evidence/drug/target2drug.json"
+            },
+            "drug2clinic": {
+              "type": "object",
+              "$ref": "evidence/drug/drug2clinic.json"
+>>>>>>> master
             }
           },
           "required": [
             "target2drug",
             "drug2clinic"
-          ],
-          "additionalProperties": false
+          ]
         }
       }
     }
@@ -44,7 +59,6 @@
   "properties": {
     "type": {},
     "sourceID": {},
-    "validated_against_schema_version": {},
     "unique_association_fields": {},
     "target": {},
     "disease": {},
@@ -57,12 +71,12 @@
     "type",
     "access_level",
     "sourceID",
-    "validated_against_schema_version",
     "unique_association_fields",
     "target",
     "drug",
     "disease",
     "evidence"
+<<<<<<< HEAD
   ],
   "additionalProperties": false,
   "import_remote_schemas": [
@@ -102,5 +116,7 @@
     {
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/base.json"
     }
+=======
+>>>>>>> master
   ]
 }

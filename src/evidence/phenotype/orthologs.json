@@ -1,12 +1,16 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Orthologous gene",
   "description": "Model orthologous gene",
   "type": "object",
   "version": "1.2.8",
   "allOf": [
     {
+<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/base.json"
+=======
+      "$ref": "../base.json"
+>>>>>>> master
     },
     {
       "properties": {
@@ -45,7 +49,11 @@
           "type": "array",
           "items": {
             "type": "object",
+<<<<<<< HEAD
             "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/linkout/linkout.json"
+=======
+            "$ref": "../linkout/linkout.json"
+>>>>>>> master
           }
         }
       }
@@ -71,6 +79,5 @@
     "human_gene_id",
     "model_gene_id",
     "species"
-  ],
-  "additionalProperties": false
+  ]
 }

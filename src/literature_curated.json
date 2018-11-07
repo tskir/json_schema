@@ -1,12 +1,16 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Literature-based evidence strings",
   "description": "Schema for target-disease evidence extracted from the literature",
   "type": "object",
   "version": "1.2.8",
   "allOf": [
     {
+<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/base.json"
+=======
+      "$ref": "base.json"
+>>>>>>> master
     },
     {
       "properties": {
@@ -20,7 +24,11 @@
         },
         "evidence": {
           "type": "object",
+<<<<<<< HEAD
           "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/literature_curated.json"
+=======
+          "$ref": "evidence/literature_curated.json"
+>>>>>>> master
         }
       }
     }
@@ -28,7 +36,6 @@
   "properties": {
     "type": {},
     "sourceID": {},
-    "validated_against_schema_version": {},
     "unique_association_fields": {},
     "access_level" :{},
     "target": {},
@@ -40,11 +47,11 @@
     "type",
     "sourceID",
     "access_level",
-    "validated_against_schema_version",
     "unique_association_fields",
     "target",
     "disease",
     "evidence"
+<<<<<<< HEAD
   ],
   "additionalProperties": false,
   "import_remote_schemas": [
@@ -81,5 +88,7 @@
     {
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/base.json"
     }
+=======
+>>>>>>> master
   ]
 }

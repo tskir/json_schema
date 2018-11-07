@@ -1,12 +1,16 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "literature_mining_evidence",
     "description": "Literature mining evidence linking gene/protein to disease",
     "type": "object",
     "version": "1.2.8",
     "allOf": [
         {
+<<<<<<< HEAD
             "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/base.json"
+=======
+            "$ref": "base.json"
+>>>>>>> master
         },
         {
             "properties": {
@@ -24,7 +28,11 @@
                 },
                 "literature_ref": {
                     "type": "object",
+<<<<<<< HEAD
                     "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/base.json#definitions/single_lit_reference"
+=======
+                    "$ref": "single_lit_reference.json"
+>>>>>>> master
                 }
             }
         }
@@ -46,6 +54,7 @@
         "evidence_codes",
         "literature_ref",
         "unique_experiment_reference"
+<<<<<<< HEAD
     ],
     "additionalProperties": false,
     "import_remote_schemas": [
@@ -70,5 +79,7 @@
         {
           "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/base.json"
         }
+=======
+>>>>>>> master
     ]
 }

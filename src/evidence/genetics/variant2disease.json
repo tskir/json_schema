@@ -1,11 +1,12 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "snp_gwas_disease_evidence",
   "description": "Evidence linking SNP to disease in a GWAS study",
   "type": "object",
   "version": "1.2.8",
   "allOf": [
     {
+<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/base.json"
     },
     {
@@ -13,29 +14,33 @@
         "allOf": {
           "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/base.json"
         },
+=======
+      "$ref": "../base.json"
+    },
+    {
+      "properties": {
+>>>>>>> master
         "clinical_significance": {
           "type": "string",
-	  "enum": [
+            "enum": [
               "Pathogenic" ,
               "Likely pathogenic" ,
-	      "protective",
-	      "association",
-	      "risk_factor",
-	      "Affects",
-	      "drug response"
+              "protective",
+              "association",
+              "risk_factor",
+              "Affects",
+              "drug response"
           ]
         },
         "gwas_panel_resolution": {
           "description": "Panel resolution of GWAS study",
           "type": "number",
-          "minimum": 0,
-          "exclusiveMinimum": true
+          "exclusiveMinimum": 0
         },
         "gwas_sample_size": {
           "description": "Sample size of GWAS study",
           "type": "number",
-          "minimum": 0,
-          "exclusiveMinimum": true
+          "exclusiveMinimum": 0
         },
         "evidence_codes": {
           "type": "array",
@@ -44,6 +49,7 @@
             "type": "string",
             "enum": [
               "http://identifiers.org/eco/GWAS",
+	      "http://identifiers.org/eco/PheWAS",
               "http://purl.obolibrary.org/obo/ECO_0000205"
             ]
           },
@@ -53,7 +59,11 @@
           "type": "array",
           "items": {
             "type": "object",
+<<<<<<< HEAD
             "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/linkout/linkout.json"
+=======
+            "$ref": "../linkout/linkout.json"
+>>>>>>> master
           }
         }
       }
@@ -78,6 +88,7 @@
     "is_associated",
     "date_asserted",
     "evidence_codes"
+<<<<<<< HEAD
   ],
   "additionalProperties": false,
   "import_remote_schemas": [
@@ -99,5 +110,7 @@
     {
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/base.json"
     }
+=======
+>>>>>>> master
   ]
 }
