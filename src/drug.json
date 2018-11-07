@@ -7,14 +7,10 @@
   "allOf": [
     {
 <<<<<<< HEAD
-<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/base.json"
 =======
       "$ref": "base.json"
 >>>>>>> master
-=======
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/base.json"
->>>>>>> parent of 164dbd0... ensure 1.2.8 branch only references 1.2.8 branch
     },
     {
       "properties": {
@@ -27,21 +23,16 @@
         "drug": {
           "type": "object",
 <<<<<<< HEAD
-<<<<<<< HEAD
           "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/bioentity/drug.json"
 =======
           "$ref": "bioentity/drug.json"
 >>>>>>> master
-=======
-          "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/bioentity/drug.json"
->>>>>>> parent of 164dbd0... ensure 1.2.8 branch only references 1.2.8 branch
         },
         "evidence": {
           "type": "object",
           "properties": {
             "target2drug": {
               "type": "object",
-<<<<<<< HEAD
 <<<<<<< HEAD
               "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/drug/target2drug.json"
             },
@@ -55,13 +46,6 @@
               "type": "object",
               "$ref": "evidence/drug/drug2clinic.json"
 >>>>>>> master
-=======
-              "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/drug/target2drug.json"
-            },
-            "drug2clinic": {
-              "type": "object",
-              "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/drug/drug2clinic.json"
->>>>>>> parent of 164dbd0... ensure 1.2.8 branch only references 1.2.8 branch
             }
           },
           "required": [
@@ -97,40 +81,40 @@
   "additionalProperties": false,
   "import_remote_schemas": [
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/bioentity/base.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/bioentity/base.json"
     },
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/method.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/method.json"
     },
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/probability.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/probability.json"
     },
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/pvalue.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/pvalue.json"
     },
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/rank.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/rank.json"
     },
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/summed_total.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/summed_total.json"
     },
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/linkout/linkout.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/linkout/linkout.json"
     },
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/base.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/base.json"
     },
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/bioentity/disease.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/bioentity/disease.json"
     },
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/bioentity/target.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/bioentity/target.json"
     },
     {
-      "$ref" : "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/drug/diseasephase.json"
+      "$ref" : "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/drug/diseasephase.json"
     },
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/base.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/base.json"
     }
 =======
 >>>>>>> master

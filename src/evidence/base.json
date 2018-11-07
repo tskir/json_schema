@@ -5,13 +5,9 @@
   "version": "1.2.8",
   "type": "object",
 <<<<<<< HEAD
-<<<<<<< HEAD
   "id": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/base.json",
 =======
 >>>>>>> master
-=======
-  "id": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/base.json",
->>>>>>> parent of 164dbd0... ensure 1.2.8 branch only references 1.2.8 branch
   "properties": {
     "unique_experiment_reference": {
       "type": "string",
@@ -31,20 +27,15 @@
       "oneOf": [
         {
 <<<<<<< HEAD
-<<<<<<< HEAD
           "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/pvalue.json"
-=======
-          "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/pvalue.json"
->>>>>>> parent of 164dbd0... ensure 1.2.8 branch only references 1.2.8 branch
         },
         {
-          "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/probability.json"
+          "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/probability.json"
         },
         {
-          "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/rank.json"
+          "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/rank.json"
         },
         {
-<<<<<<< HEAD
           "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/summed_total.json"
 =======
           "$ref": "association_score/pvalue.json"
@@ -58,9 +49,6 @@
         {
           "$ref": "association_score/summed_total.json"
 >>>>>>> master
-=======
-          "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/summed_total.json"
->>>>>>> parent of 164dbd0... ensure 1.2.8 branch only references 1.2.8 branch
         }
       ]
     },
@@ -166,7 +154,7 @@
         },
         "rank": {
           "type": "object",
-          "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/rank.json"
+          "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/rank.json"
         },
         "mined_sentences": {
           "type": "array",
@@ -232,17 +220,13 @@
   },
   "import_remote_schemas": [
     {
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/method.json"
+      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/method.json"
     },
     {
-<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/base.json"
 =======
       }
 >>>>>>> master
-=======
-      "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/association_score/base.json"
->>>>>>> parent of 164dbd0... ensure 1.2.8 branch only references 1.2.8 branch
     }
   }
 }

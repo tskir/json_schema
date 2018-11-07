@@ -5,13 +5,9 @@
   "version": "1.2.8",
   "type": "object",
 <<<<<<< HEAD
-<<<<<<< HEAD
   "id": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/linkout/linkout.json",
 =======
 >>>>>>> master
-=======
-  "id": "https://raw.githubusercontent.com/opentargets/json_schema/master/src/evidence/linkout/linkout.json",
->>>>>>> parent of 164dbd0... ensure 1.2.8 branch only references 1.2.8 branch
   "properties": {
     "nice_name": {
       "type": "string"
