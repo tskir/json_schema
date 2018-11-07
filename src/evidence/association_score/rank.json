@@ -1,7 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Rank",
   "description": "Rank",
+  "id": "#rank",
   "type": "object",
   "version": "1.2.8",
   "properties": {
@@ -22,13 +23,10 @@
     },
     "method": {
       "type": "object",
-<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/method.json"
-=======
-      "$ref": "method.json"
->>>>>>> master
     }
   },
+  "additionalProperties": false,
   "required": [
     "position",
     "sample_size",

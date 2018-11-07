@@ -1,31 +1,26 @@
 {
     "type": "object",
+    "id": "#summed_total",
     "allOf": [
         {
-<<<<<<< HEAD
             "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/base.json"
         },
         {
-=======
->>>>>>> master
             "properties": {
-                "type": {
-                    "type" : "string",          
-                    "enum": [
-                        "summed_total"
-                    ]
-                },
+        "type": {
+          "type" : "string",          
+          "enum": [
+            "summed_total"
+          ]
+        },
                 "value": {
                     "type": "number",
-                    "exclusiveMinimum": 0
+                    "minimum": 0,
+                    "exclusiveMinimum": true
                 },
                 "method": {
                     "type": "object",
-<<<<<<< HEAD
                     "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/association_score/method.json"
-=======
-                    "$ref": "method.json"
->>>>>>> master
                 }
             }
         }
@@ -38,5 +33,6 @@
     "required": [
         "value",
         "type"
-    ]
+    ],
+    "additionalProperties": false
 }

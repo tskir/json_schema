@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Target-Disease-Association",
   "description": "Schema for different types of target-disease associations used by OpenTargets",
   "type": "object",
@@ -19,11 +19,19 @@
         "private"
       ]      
     },
+    
+    "validated_against_schema_version": {
+      "description": "The OpenTargets-JSON schema version number against which your data was validated",
+      "type": "string",
+      "enum": [
+        "1.2.8"
+      ]
+    },
 
     "unique_association_fields": {
       "description": "String based key-value properties that must uniquely identify each JSON object in your data.",
       "type": "object",
-      "": {
+      "additionalProperties": {
         "type": "string"
       }
     },
@@ -31,21 +39,13 @@
     "target" : {
       "type": "object",
       "description" : "Target in OpenTargets's target ontology",
-<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/bioentity/target.json"
-=======
-      "$ref": "bioentity/target.json"
->>>>>>> master
     },
 
     "disease" : {
       "type": "object",
       "description" : "Disease in the EFO ontology",
-<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/bioentity/disease.json"
-=======
-      "$ref": "bioentity/disease.json"
->>>>>>> master
     },
 
     "literature": {
@@ -55,18 +55,13 @@
           "type": "array",
           "items": {
             "type": "object",
-<<<<<<< HEAD
             "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/base.json#/definitions/single_lit_reference"
-=======
-            "$ref": "evidence/single_lit_reference.json"
->>>>>>> master
           },
           "minItems": 1,
           "uniqueItems": true
         }
       }
     }
-<<<<<<< HEAD
   },
   "import_remote_schemas": [
     { 
@@ -82,7 +77,4 @@
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/base.json#/definitions/single_lit_reference"
     }
   ]
-=======
-  }
->>>>>>> master
 }

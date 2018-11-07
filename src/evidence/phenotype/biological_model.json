@@ -1,16 +1,12 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Biological model",
   "description": "Evidence linking human target to animal target",
   "type": "object",
   "version": "1.2.8",
   "allOf": [
     {
-<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/base.json"
-=======
-      "$ref": "../base.json"
->>>>>>> master
     },
     {
       "properties": {
@@ -70,11 +66,7 @@
           "description": "List of phenotypes for this model",
           "items": {          
             "type": "object",
-<<<<<<< HEAD
             "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/bioentity/phenotype.json"
-=======
-            "$ref": "../../bioentity/phenotype.json"
->>>>>>> master
           },
           "minItems": 1
         },
@@ -82,11 +74,7 @@
           "type": "array",
           "items": {
             "type": "object",
-<<<<<<< HEAD
             "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/evidence/linkout/linkout.json"
-=======
-            "$ref": "../linkout/linkout.json"
->>>>>>> master
           }
         }
       }
@@ -122,5 +110,6 @@
     "zygosity",
     "phenotypes",
     "species"
-  ]
+  ],
+  "additionalProperties": false
 }

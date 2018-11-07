@@ -1,17 +1,14 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "OpenTargets target",
   "description": "OpenTargets target model. Target includes base like proteins, genes, protein complexes etc.",
   "type": "object",
   "version": "1.2.8",
   "allOf": [
     {
-<<<<<<< HEAD
       "$ref": "https://raw.githubusercontent.com/opentargets/json_schema/1.2.8/src/bioentity/base.json"
     },
     {
-=======
->>>>>>> master
       "properties": {
         "id": {
           "type" : "string",
@@ -22,10 +19,10 @@
         "tier": {
            "type" : "string",
           "description": "Cancer Gene Census genes has been split into two tiers",
-          "enum": [
-            "tier 1",
-            "tier 2"
-          ]
+	  "enum": [
+	    "tier 1",
+	    "tier 2"
+	  ]
         },
 
         "complex_id": {
@@ -134,5 +131,6 @@
   "dependencies" : {
   	"complex_members" : ["complex_type"],
   	"complex_type" : ["complex_members"]
-  }
+  },
+  "additionalProperties": false
 }
