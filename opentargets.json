@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "OpenTargets",
   "description": "OpenTargets evidence objects",
   "type": "object",
@@ -689,14 +689,17 @@
             "id": {
               "type": "string",
               "description": "An array of variant identifiers",
-              "pattern": "^http://www.ncbi.nlm.nih.gov/clinvar/RCV[0-9]{9}|http://identifiers.org/dbsnp/rs[0-9]{1,}|http://identifiers.org/dbsnp/esv[0-9]{1,}|http://identifiers.org/dbsnp/nsv[0-9]{1,}$"
+              "pattern": "^http://www.ncbi.nlm.nih.gov/clinvar/RCV[0-9]{9}|http://identifiers.org/dbsnp/rs[0-9]{1,}|http://identifiers.org/dbsnp/esv[0-9]{1,}|http://identifiers.org/dbsnp/nsv[0-9]{1,}|.{,2}_[0-9]+_[ACTG]+_[ACTG]+$"
             },
             "type": {
               "type": "string",
               "enum": [
                 "snp single",
                 "snp snp interaction",
-                "structural variant"
+                "structural variant",
+                "SNP",
+                "deletion",
+                "insertion"
               ]
             }
           },
@@ -1152,9 +1155,9 @@
     "phenotype": {
       "type": "object",
       "properties": {
-        "id" :{
-          "type" : "string",
-          "description" : "Phenotype identifier."
+        "id" : {
+            "type" : "string",
+            "description" : "Phenotype identifier." 
         },
         "term_id": {
           "type": "string",
@@ -1229,8 +1232,10 @@
             },
             {
               "$ref": "#/definitions/score_summed_total"
-            }
-          ]
+            },
+            {
+              "$ref": "#/definitions/score_locus_to_gene"
+            }          ]
         },
         "provenance_type": {
           "type": "object",
@@ -1324,6 +1329,30 @@
         "provenance_type",
         "is_associated",
         "date_asserted"
+      ]
+    },
+    "score_locus_to_gene": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "locus_to_gene_score"
+          ]
+        },
+        "value": {
+          "type": "number",
+          "maximum": 1,
+          "minimum": 0,
+          "exclusiveMinimum": true
+        },
+        "method": {
+          "type": "object",
+          "$ref": "#/definitions/score_method"
+        }
+      },
+      "required": [
+        "value"
       ]
     }
   }
