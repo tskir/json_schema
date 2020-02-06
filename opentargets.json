@@ -1232,10 +1232,8 @@
             },
             {
               "$ref": "#/definitions/score_summed_total"
-            },
-            {
-              "$ref": "#/definitions/score_locus_to_gene"
-            }          ]
+            }          
+          ]
         },
         "provenance_type": {
           "type": "object",
@@ -1329,30 +1327,6 @@
         "provenance_type",
         "is_associated",
         "date_asserted"
-      ]
-    },
-    "score_locus_to_gene": {
-      "type": "object",
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "locus_to_gene_score"
-          ]
-        },
-        "value": {
-          "type": "number",
-          "maximum": 1,
-          "minimum": 0,
-          "exclusiveMinimum": true
-        },
-        "method": {
-          "type": "object",
-          "$ref": "#/definitions/score_method"
-        }
-      },
-      "required": [
-        "value"
       ]
     }
   }
