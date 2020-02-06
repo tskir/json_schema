@@ -1065,7 +1065,8 @@
         "type": {
           "type": "string",
           "enum": [
-            "probability"
+            "probability",
+            "locus_to_gene_score"
           ]
         },
         "value": {
