@@ -829,7 +829,16 @@
                     },
                     "review_status": {
                       "type": "string",
-                      "description": "ClinVar review_status of the variant."
+                      "description": "ClinVar review_status of the variant.",
+                      "enum": [
+                        "no assertion provided",
+                        "no assertion criteria provided",
+                        "criteria provided, single submitter",
+                        "criteria provided, conflicting interpretations",
+                        "criteria provided, multiple submitters, no conflicts",
+                        "reviewed by expert panel",
+                        "practice guideline"
+                      ]
                     }
                   },
                   "required": [
@@ -838,29 +847,11 @@
                   ]
                 },
                 "mode_of_inheritance": {
-                  "type": "string",
                   "description": "ClinVar mode of inheritance",
-                  "enum": [
-                    "autosomal dominant inheritance",
-                    "autosomal recessive inheritance",
-                    "somatic mutation",
-                    "x-linked inheritance",
-                    "autosomal unknown",
-                    "x-linked recessive inheritance",
-                    "sporadic",
-                    "mitochondrial inheritance",
-                    "x-linked dominant inheritance",
-                    "modeofinheritance multiple",
-                    "oligogenic inheritance",
-                    "other",
-                    "y-linked inheritance",
-                    "sex-limited autosomal dominant",
-                    "autosomal dominant inheritance with maternal imprinting",
-                    "genetic anticipation",
-                    "co-dominant",
-                    "autosomal dominant inheritance with paternal imprinting",
-                    "enigma rules, 2015"
-                  ]
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "last_evaluated_date": {
                   "$ref": "#/definitions/date",
