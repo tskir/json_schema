@@ -858,8 +858,11 @@
                   ]
                 },
                 "mode_of_inheritance": {
-                  "type": "string",
-                  "description": "ClinVar mode of inheritance"
+                  "description": "ClinVar mode of inheritance",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "last_evaluated_date": {
                   "$ref": "#/definitions/date",
